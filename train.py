@@ -29,7 +29,7 @@ else:
     
 epochs = input_args.epochs
 print_every = 40
-#steps = 0
+
 
 #train the model
 def train():
@@ -67,9 +67,8 @@ def train():
                 model.train()
 
     check_accuracy_on_test()  
-#     print( "Valid Loss: {:.3f}.. ".format(validation()[0]/len(validloader)), 
-#       "Valid Accuracy: {:.3f}".format(validation()[1]/len(validloader)))
-    
+
+
     
 def check_accuracy_on_test():  
     """Checks model accuracy on test data in mode .eval() and .no_grad() using device provided by user"""
@@ -113,7 +112,6 @@ def save_checkpoint():
     model.cpu()
     checkpoint = {
                   'model_arch': model,
-                  #'classifier': model.classifier,
                   'input_size': input_size,
                   'output_size': output_size,
                   'hidden_layers': hidden_layers,

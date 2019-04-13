@@ -1,7 +1,3 @@
-# from IPython import get_ipython
-# get_ipython().run_line_magic('matplotlib', 'inline')
-#%matplotlib inline
-#%config InlineBackend.figure_format = 'retina'
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
